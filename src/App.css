@@ -1,0 +1,125 @@
+@import url("fonts.css");
+
+/*UI Integration*/
+html,
+body,
+#root {
+  height: 100%;
+  --tw-bg-opacity: 1;
+  background-color: #443280;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*@import url("fonts.css");*/
+
+body {
+  font-family:"sofia-pro-soft";
+  padding-top: 10px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+
+
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 20px;
+  /*height: 100vh;*/
+}
+
+.Auth-form-container1 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* margin-left: 20px;*/
+}
+
+.Auth-form-title {
+  color: #3a3335;
+}
+
+
+.Auth-form {
+  width: 492px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.err_msg {
+  font-size: 11px;
+  color: red;
+}
+
+.bg-brandColor {
+  background-color: #291F4E;
+}
+
+/*--DROP DOWN--*/
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.dropdown {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  perspective: 1000px;
+  z-index: 100;
+}
+.dropdown:hover {
+  background: transparent;
+  cursor: pointer;
+}
+.dropdown:hover .dropdown_menu li {
+  display: block;
+}
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  perspective: 1000px;
+  z-index: -1;
+  border-radius: 10px;
+
+}
+
+.dropdown_menu li {
+  display: none;
+  color: #291f4e;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+}
+.dropdown_menu li:hover {
+  background-color: #2980b9;
+}
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+.dropdown_menu--animated {
+  display: none;
+}
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
