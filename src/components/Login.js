@@ -5,7 +5,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ToastAlert } from "../utilis/ToastAlert";
 import AuthContext from "../context/AuthContext";
-const BASE_URL = "http://192.168.0.118:6969/"
+import {BASE_URL} from '../config.js'
 
 const Login = ({ setLoginUser }) => {
 

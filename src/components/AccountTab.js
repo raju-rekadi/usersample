@@ -6,7 +6,7 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
-const BASE_URL = "http://192.168.0.118:6969/";
+import {BASE_URL} from '../config.js'
 
 export const AccountTab = ({ user }) => {
   const [isSubmit, setIsSubmit] = useState(false);

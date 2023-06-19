@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from 'axios'
 import { ToastAlert } from "../utilis/ToastAlert";
-const BASE_URL = "http://192.168.0.118:6969/"
+import {BASE_URL} from '../config.js'
 
 
 export const ResetPasswordTab = ({ user }) => {

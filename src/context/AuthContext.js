@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useCallback } from "react";
 import { ToastAlert } from "../utilis/ToastAlert";
 // import { BASE_URL } from "../config";
 import axios from "axios";
-const BASE_URL = "http://192.168.0.118:6969/";
+import {BASE_URL} from '../config.js'
 
 export const AuthContext = createContext();
 

@@ -4,7 +4,7 @@ import "../App.css";
 import AuthContext from "../context/AuthContext";
 import axios from "axios";
 import { ToastAlert } from "../utilis/ToastAlert";
-const BASE_URL = "http://192.168.0.118:6969/";
+import {BASE_URL} from '../config.js'
 
 const Header = () => {
   const authCtx = useContext(AuthContext);
